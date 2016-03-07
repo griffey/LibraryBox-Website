@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% if page.head %}{{ page.head }}{% else %}{% include head.html %}{% endif %}
+
+  <body>
+
+    {% if page.header %}{{ page.header }}{% else %}{% include header.html %}{% endif %}
+
+    {{ content }}
+
+    {% if page.footer %}{{ page.footer }}{% else %}{% include footer.html %}{% endif %}
+
+  </body>
+
+</html>
